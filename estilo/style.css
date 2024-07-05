@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: Android;
+    src: url(fontes/idroid.otf);
+    font-weight: normal;
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', 'Cursive';
+    --font-android: 'Android', 'Cursive';
+}
+
+body
+{
+    background-color: rgb(25, 144, 25);
+}
+
+header
+{
+    background-image: linear-gradient(to top, rgb(25, 144, 25), rgb(0, 123, 0), rgb(0, 45, 0));
+    color: white;
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    height: 150px;
+}
+
+header > h1
+{
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    font-weight: normal;
+    padding-top: 20px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.438);
+}
+
+header > p
+{
+    font-family: var(--fonte-padrao);
+    font-weight: normal;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.438);
+}
+
+nav
+{
+    display: flex;
+    background-image: linear-gradient(to bottom, rgb(0, 45, 0), rgb(25, 144, 25), rgb(25, 144, 25),rgb(0, 45, 0));
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 40px;
+    border: 5px currentColor rgba(20, 111, 20, 0.643);
+}
+
+nav > a
+{
+    font-family: var(--fonte-destaque);
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+nav > a:hover
+{
+    background-image: linear-gradient(to bottom, rgb(0, 45, 0), rgb(19, 105, 19), rgb(9, 105, 19),rgb(0, 45, 0));
+    color: rgb(0, 255, 51);
+    transition-duration: .5s;
+    transform: scale(1.2);
+}
+
+main
+{
+    background-color: rgb(225, 243, 208);
+    min-width: 320px;
+    max-width: 800px;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: auto;
+    box-shadow: 2px 7px 9px rgba(0, 0, 0, 0.549);
+}
+
+main > article > h1
+{
+    font-family: var(--font-android);
+    font-size: 2em;
+    font-weight: normal;
+    color: rgb(13, 113, 13);
+    margin-bottom: 20px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.384);
+}
+
+main > article > h2
+{
+    background-image: linear-gradient(to right, rgb(123, 247, 123), transparent);
+    font-family: var(--font-android);
+    font-weight: normal;
+
+    color: rgb(14, 113, 14);
+    margin-bottom: 20px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.384);
+}
+
+main > article > p
+{
+    font-family: var(--fonte-padrao);
+    text-align: justify;
+    margin: 20px 0px;
+    text-indent: 30px;
+}
+
+main > article > p > a
+{
+    background-color: rgb(122, 228, 157);
+    font-weight: bolder;
+    color: rgb(0, 75, 25);
+    text-decoration: none;
+    padding: 2px 6px;
+}
+
+main > article > p > a:hover
+{
+    text-decoration: underline;
+}
+
+main > article > picture
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > article > picture > img
+{
+    min-width: 400px;
+    max-width: 780px;
+    border-radius: 10%;
+}
+
+main > article > picture > img:hover
+{
+    transform: scale(1.04);
+}
+
+main > article > iframe
+{    
+    display: block;
+    width: 90%;
+    height: 360px;
+    margin: 20px auto;
+}
+
+main > aside
+{
+    font-family: var(--fonte-padrao);
+    background-color: rgb(3, 95, 54);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 7px 9px rgba(0, 0, 0, 0.502);
+
+}
+
+main > aside > h3
+{
+    background-image: linear-gradient(to right, rgb(0, 153, 51), transparent);
+    font-size: 1.5em;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+main > aside > p
+{
+    text-indent: 30px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+main > aside > ul
+
+{
+    text-align: justify;
+    color: white;
+    list-style-position: inside;
+    columns: 2;
+    padding-left: 20px;
+}
+
+main > aside > ul > li
+{
+    font-weight: bold;
+}
+
+main strong
+{
+    color: rgb(0, 153, 51);
+}
+
+main aside strong
+{
+    color: rgb(0, 255, 85);
+}
+
+
+footer
+{    
+    display: flex;
+    background-color: black;
+    text-align: center;
+    color: white;
+    height: 20px;
+    padding: 10px;
+    margin-top: 20px;   
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+footer > p
+{
+    margin: auto;
+    text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.384);
+}
