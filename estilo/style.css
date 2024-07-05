@@ -149,12 +149,6 @@ main > article > picture > img
 {
     min-width: 400px;
     max-width: 780px;
-    border-radius: 10%;
-}
-
-main > article > picture > img:hover
-{
-    transform: scale(1.04);
 }
 
 main > article > iframe
