@@ -77,7 +77,6 @@ nav > a:hover
     background-image: linear-gradient(to bottom, rgb(0, 45, 0), rgb(19, 105, 19), rgb(9, 105, 19),rgb(0, 45, 0));
     color: rgb(0, 255, 51);
     transition-duration: .5s;
-    transform: scale(1.2);
 }
 
 main
